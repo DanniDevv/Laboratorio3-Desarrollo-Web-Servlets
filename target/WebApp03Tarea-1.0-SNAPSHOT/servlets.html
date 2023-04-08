@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Servlets</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="webjars/bootstrap/5.2.3/css/bootstrap.min.css" type="text/css" />
+    </head>
+
+    <body>
+        <main>
+            <div style="text-align: center; margin-top: 25px; margin-left: 300px">
+                <div class="card border-success mb-3" style="max-width: 18rem; margin-left: 50px" >
+                    <div class="card-header bg-transparent border-success">Números Pares</div>
+                    <div class="card-body text-success">
+                        <h5 class="card-title">Ingrese un numero</h5>
+                        <form name="form" action="/WebApp03Tarea/ServletNumerosPares" method="post">
+                            <p class="card-text">
+                                <input type="number" name="par" class="form-control" /><br>
+                            </p>
+                            <div class="card-footer bg-transparent border-success">
+                                <button type="submit" class="btn btn-sm btn-outline-primary">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card border-success mb-3" style="max-width: 18rem; margin-left: 50px" >
+                    <div class="card-header bg-transparent border-success">Números Primos</div>
+                    <div class="card-body text-success">
+                        <h5 class="card-title">Ingrese un numero</h5>
+                        <form name="form" action="/WebApp03Tarea/ServletNumerosPrimos" method="post">
+                            <p class="card-text">
+                                <input type="number" name="primo"  class="form-control" /><br>
+                            </p>
+
+                            <div class="card-footer bg-transparent border-success">
+                                <button type="submit" class="btn btn-sm btn-outline-danger">Enviar</button>                        </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card border-success mb-3" style="max-width: 18rem; margin-left: 50px" >
+                    <div class="card-header bg-transparent border-success">Tabla de Multiplicar</div>
+                    <div class="card-body text-success">
+                        <h5 class="card-title">Ingrese un numero</h5>
+                        <form name="form" action="/WebApp03Tarea/ServletTablasMultiplicar" method="post">
+                            <p class="card-text">
+                                <input type="number" name="tablas" class="form-control" /><br>
+                            </p>
+
+                            <div class="card-footer bg-transparent border-success">
+                                <button type="submit" class="btn btn-sm btn-outline-primary">Enviar</button>                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
